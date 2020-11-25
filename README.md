@@ -22,7 +22,7 @@ The `pretty` template builds on the `basic` version and brings couple of improve
 * Highlighting matching phrases in search results
 * Paginating results with Kaminari
 
-#Жишээ апп үүсгэх
+## [3] Жишээ апп үүсгэх
 rails new searchapp --skip --skip-bundle --template https://raw.github.com/elasticsearch/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/01-basic.rb
 
 rails new searchapp --skip --skip-bundle --template https://raw.github.com/elastic/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/01-basic.rb
