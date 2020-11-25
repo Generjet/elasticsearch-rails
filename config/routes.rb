@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  resources :products do
+  	collection {get :search }
+  end
+
   root to: 'articles#index'
+  
   resources :articles do
     collection { get :search }
   end

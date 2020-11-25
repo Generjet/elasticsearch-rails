@@ -1,0 +1,7 @@
+rails new searchapp --skip --skip-bundle --template https://raw.github.com/elasticsearch/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/01-basic.rb
+
+rails new searchapp --skip --skip-bundle --template https://raw.github.com/elastic/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/01-basic.rb
+
+rails new searchapp --skip --skip-bundle --template https://raw.github.com/elastic/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/02-pretty.rb
+
+rails new searchapp --skip --skip-bundle --template https://raw.github.com/elastic/elasticsearch-rails/master/elasticsearch-rails/lib/rails/templates/03-expert.rb
