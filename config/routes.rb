@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :tanks
+  resources :foods
   resources :products do
   	collection {get :search }
   end
 
-  root to: 'articles#index'
+  root to: 'products#index'
   
   resources :articles do
     collection { get :search }

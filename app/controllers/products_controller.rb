@@ -9,7 +9,8 @@ class ProductsController < ApplicationController
 
 
   def search
-    @products = Product.search(params[:q]).page(params[:page]).records
+    # @products = Product.search(params[:q]).page(params[:page]).records
+    @products = Product.search((params[:q].present? ? params[:q] : '*')).records
 
     render action: "index"
   end
