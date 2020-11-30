@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 	include Elasticsearch::Model::Callbacks
 
   after_save :set_elastic_index
-  # after_update :set_elastic_index
+  after_update :set_elastic_index
   # after_destroy :set_elastic_index
   # after_rollback :set_elastic_index
   # after_commit :set_elastic_index
