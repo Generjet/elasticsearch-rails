@@ -5,4 +5,9 @@ class ReindexElasticJob < ApplicationJob
     Product.__elasticsearch__.create_index!
     Product.import
   end
+
+  # rescue_from(ActiveRecord::RecordNotFound) do |exception|
+  #   puts "ActiveRecord::RecordNotFound"
+  # end
+
 end
