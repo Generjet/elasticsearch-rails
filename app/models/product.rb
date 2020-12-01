@@ -40,8 +40,9 @@ class Product < ApplicationRecord
   private
 
   def set_elastic_index
-    Product.__elasticsearch__.create_index!
-    Product.import
+    ReindexElasticJob.perform_later
+    # Product.__elasticsearch__.create_index!
+    # Product.import
   end
 
 end
